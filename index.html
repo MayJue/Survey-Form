@@ -3,23 +3,50 @@
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
-  <h1 id="title"></h1>
-  <p id="description"></p>
+  <h1 id="title">Doughnut Lover Memeber Survey</h1>
+  <p id="description">Members of the Doughnut Lover Club, please provide us a feedback for improvements for our club.</p>
   <form id="survey-form" class="" action="index.html" method="post">
     <label id="name-label" for="name">Name:</label>
-    <input type="text" id="name" name="name" placeholder="Enter your name">
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
     <label id="email-label" for="email">Email:</label>
-    <input type="text" id="email" name="email" pattern=".+globex.com" placeholder="Enter your email">
-    <label id="number-label" for="number">Rating:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    <label id="number-label" for="number">How many years have you been apart of this club?</label>
     <input type="number" id="number" name="number" min="0" max="100" placeholder="Enter your number">
 
     <!-- #12 -->
-    <label for=""></label>
+    <label for="dropdown">What is your member rank?</label>
     <select id="dropdown" class="" name="">
-      <option value="one">1</option>
-      <option value="one">2</option>
+      <option value="one">Plain Doughnut</option>
+      <option value="one">Glazed Doughnut</option>
+      <option value="one">Chocolate Frosted Doughnut</option>
+      <option value="one">Strawberry Frosted Jelly Doughnut</option>
     <!-- #13 -->
+    <p>How would you rate this club?</p>
+    <input type="radio" name="rate" value="Terrible">
+    <label for="Terrible">Terrible</label>
+    <input type="radio" name="rate" value="Bad">
+    <label for="Bad">Bad</label>
+    <input type="radio" name="rate" value="Ok">
+    <label for="Ok">Ok</label>
+    <input type="radio" name="rate" value="Good">
+    <label for="Good">Good</label>
+    <input type="radio" name="rate" value="Amazing">
+    <label for="Amazing">Amazing</label>
 
+    <p>What would you like to see more of?</p>
+    <input type="checkbox" name="like" value="Cooking">
+    <label for="Cooking">Cooking Doughnut</label>
+    <input type="checkbox" name="like" value="Decorating">
+    <label for="Decorating">Decorating Doughnut</label>
+    <input type="checkbox" name="like" value="Discussion">
+    <label for="Discussion">Discussion about Doughnut</label>
+    <input type="checkbox" name="like" value="recipies">
+    <label for="recipies">Doughnut recipies reveals</label>
+
+    <p>Comments:</p>
+    <textarea name="Comments" rows="8" cols="80"></textarea>
+
+    <button id="submit" type="submit" name="submit">Submit</button>
     </select>
   </form>
 </body>
